@@ -1,23 +1,26 @@
 class B:
-    def __init__(self):
-        self.B1 = 0
-        self.B2 = 0.0
+    def __init__(self, B1: int, B2: float):
+        self._B1 = B1
+        self._B2 = B2
 
     def get_B1(self):
-        return self.B1
+        return self._B1
 
-    def set_B1(self, value):
-        self.B1 = value
+    def set_B1(self, B1: int):
+        self._B1 = B1
 
     def get_B2(self):
-        return self.B2
+        return self._B2
 
-    def set_B2(self, value):
-        self.B2 = value
+    def set_B2(self, B2: float):
+        self._B2 = B2
 
     def MB1(self):
-        print("MB1")
+        print("Método MB1")
 
     def MB2(self):
-        print("MB2")
+        print("Método MB2")
+
+    def MB3(self):
+        print("Método MB3") 
 

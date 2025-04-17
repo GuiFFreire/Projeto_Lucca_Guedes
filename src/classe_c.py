@@ -1,23 +1,26 @@
 class C:
-    def __init__(self):
-        self.C1 = ""
-        self.C2 = 0
+    def __init__(self, C1: str, C2: int):
+        self._C1 = C1
+        self._C2 = C2
 
     def get_C1(self):
-        return self.C1
+        return self._C1
 
-    def set_C1(self, value):
-        self.C1 = value
+    def set_C1(self, C1: str):
+        self._C1 = C1
 
     def get_C2(self):
-        return self.C2
+        return self._C2
 
-    def set_C2(self, value):
-        self.C2 = value
+    def set_C2(self, C2: int):
+        self._C2 = C2
 
     def MC1(self):
-        print("MC1")
+        print("Método MC1")
 
     def MC2(self):
-        print("MC2")
+        print("Método MC2")
+
+    def MC3(self):
+        print("Método MC3")
 
